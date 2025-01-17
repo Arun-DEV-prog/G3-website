@@ -46,7 +46,7 @@ font-weight: 500;
 .navber, .bannar{
     justify-content: space-between;
     align-items: center;
-    max-width: 1280px;
+    max-width: 960px;
    margin: 0 auto;
  
    
@@ -55,7 +55,7 @@ font-weight: 500;
 /* bannar-content */
 
 .bannar-content{
-    max-width: 850px;
+    max-width: 569px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -66,7 +66,8 @@ font-weight: 500;
 }
 .banner-title{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-top: 30px;
 }
 
 .primary-btn{
@@ -79,11 +80,43 @@ font-weight: 500;
     font-weight: 400;
 }
 
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+main >section{
+    margin-top: 100px;
+}
+.teams {
+    align-items: center;
+}
+.team-imag-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+}
+.team-imag-container img{
+    width: 100%;
+}
+.our-features{
+    margin-left: 100px;
+    max-width: 355px;
+}
 /* responsive */
 
 @media screen and (max-width:576px){
-    .navber , .nav-link{
+    .navber , 
+    .nav-link, 
+    .teams{
         flex-direction: column;
     }
-    
+    .team-imag-containerz{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+   
 }
